@@ -1,3 +1,4 @@
+// Step 6: ng generate component heroes
 import { Component, OnInit } from '@angular/core';
 import { Hero } from '../hero';
 import { HeroService } from '../hero.service';
@@ -8,6 +9,10 @@ import { HeroService } from '../hero.service';
   styleUrls: [ './heroes.component.css' ]
 })
 export class HeroesComponent implements OnInit {
+
+  // Step 7: add variables here
+  // hero = 'Windstorm';
+
   heroes: Hero[];
 
   constructor(private heroService: HeroService) { }
