@@ -1,6 +1,9 @@
 // Step 6: ng generate component heroes
 import { Component, OnInit } from '@angular/core';
+// Step 11: import the Hero class
 import { Hero } from '../hero';
+// Step 18: import mock data
+import { HEROES } from '../mock-heroes';
 import { HeroService } from '../hero.service';
 
 @Component({
@@ -12,6 +15,15 @@ export class HeroesComponent implements OnInit {
 
   // Step 7: add variables here
   // hero = 'Windstorm';
+
+  // Step 12: Consume the Hero type
+  // hero: Hero = {
+  //   id: 1,
+  //   name: 'Windstorm'
+  // };
+
+  // Step 19: define a property called heroes to expose the HEROES array for binding
+  // heroes = HEROES;
 
   heroes: Hero[];
 

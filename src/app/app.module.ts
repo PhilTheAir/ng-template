@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+// Step 15: import FormsModule
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
@@ -15,6 +16,7 @@ import { MessagesComponent } from './messages/messages.component';
 @NgModule({
   imports: [
     BrowserModule,
+    // Step 16: add FormsModule to the @NgModule metadata's imports array
     FormsModule,
     AppRoutingModule,
     HttpClientModule,

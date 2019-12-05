@@ -7,8 +7,26 @@
     add
   </button>
 </div>
+<!-- Step 8: consume 'hero' here -->
+<!-- {{hero}} -->
+
+<!-- Step 12: consume new 'hero' here -->
+<!-- <h2>{{hero.name}} Details</h2>
+<div><span>id: </span>{{hero.id}}</div>
+<div><span>name: </span>{{hero.name}}</div> -->
+
+<!-- Step 13: use built-in pipe: uppercase -->
+<!-- <h2>{{hero.name | uppercase}} Details</h2> -->
+
+<!-- Step 14: use two-way data binding: [(ngModel)] -->
+<!-- <div>
+  <label>name:
+    <input [(ngModel)]="hero.name" placeholder="name"/>
+  </label>
+</div> -->
 
 <ul class="heroes">
+  <!-- Step 20: list heroes with *ngFor -->
   <li *ngFor="let hero of heroes">
     <a routerLink="/detail/{{hero.id}}">
       <span class="badge">{{hero.id}}</span> {{hero.name}}
